@@ -1,13 +1,17 @@
 import commonjs from 'rollup-plugin-commonjs'
-
+import dts from "rollup-plugin-dts";
 
 export default [{
-  name: 'apipostMock',
-  input: './src/mock.js',
+  input:'./src/mock.js',
   output: {
-    name: 'apipostMock',
-    file: 'dist/index.js',
+    name: 'ApipostMock',
+    file: './dist/index.js',
     format: 'umd'
   },
   plugins: [commonjs()],
+},
+{
+  input: "./src/mock.js",
+  output: [{ file: "dist/index.d.ts", format: "es" }],
+  plugins: [dts()],
 }]

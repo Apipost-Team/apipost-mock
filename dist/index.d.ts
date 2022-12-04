@@ -1,10 +1,10 @@
 /* global require, module, window */
-const Handler = require('./mock/handler')
-const Util = require('./mock/util')
-const Random = require('./mock/random')
-const RE = require('./mock/regexp')
-const toJSONSchema = require('./mock/schema')
-const valid = require('./mock/valid')
+const Handler = require('./mock/handler');
+const Util = require('./mock/util');
+const Random = require('./mock/random');
+const RE = require('./mock/regexp');
+const toJSONSchema = require('./mock/schema');
+const valid = require('./mock/valid');
 
 
 
@@ -22,9 +22,9 @@ const Mock = {
     valid: valid,
     heredoc: Util.heredoc,
     _mocked: {}
-}
+};
 
-Mock.version = '1.0.1-beta3'
+Mock.version = '1.0.1-beta3';
 
 
 
@@ -45,10 +45,10 @@ Mock.mock = function(rurl, rtype, template) {
     }
     // Mock.mock(rurl, template)
     if (arguments.length === 2) {
-        template = rtype
-        rtype = undefined
+        template = rtype;
+        rtype = undefined;
     }
     return Mock
-}
+};
 
-module.exports = Mock
+module.exports = Mock;

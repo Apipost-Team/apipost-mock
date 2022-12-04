@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.apipostMock = factory());
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.ApipostMock = factory());
 })(this, (function () { 'use strict';
 
     /*
@@ -7918,7 +7918,7 @@
         https://github.com/nuysoft/Mock
         墨智 mozhi.gyy@taobao.com nuysoft@gmail.com
     */
-    var Mock = {
+    const Mock = {
         Handler: handler,
         Random: random,
         Util: util,
