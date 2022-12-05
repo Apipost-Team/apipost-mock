@@ -1,6 +1,6 @@
 {
   "name": "apipost-mock",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate random mock data,Based On Mockjs https://github.com/nuysoft/Mock",
   "main": "dist/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "url": "https://github.com/Apipost-Team/apipost-mock/issues"
   },
   "homepage": "https://github.com/Apipost-Team/apipost-mock#readme",
-  "dependencies": {
+  "devDependencies": {
     "rollup": "^2.74.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-dts": "^5.0.0",
